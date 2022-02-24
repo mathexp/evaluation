@@ -1,0 +1,44 @@
+[
+  {
+    "index": 2729,
+    "level": "Level 4",
+    "problem": "What is $11111111_2+111111_2$? Write your answer in base $10$.",
+    "solution": "One could add them up by carrying in base $2$. But there is a simpler way. Note that the first number is $2^0+2^1+2^2+2^3+2^4+2^5+2^6+2^7$, which, by the formula for geometric series, is $2^8-1=256-1=255$. The second number is $2^0+2^1+2^2+2^3+2^4+2^5=2^6-1=64-1=63$. Thus the sum is $255+63=305+13=\\boxed{318}$.",
+    "type": "Number Theory"
+  },
+  {
+    "index": 4958,
+    "level": "Level 4",
+    "problem": "Ten 6-sided dice are rolled. What is the probability that exactly three of the dice show a 1? Express your answer as a decimal rounded to the nearest thousandth.",
+    "solution": "There are $\\binom{10}{3}=120$ ways to select exactly three dice to roll 1's ones out of ten dice total. The probability of any one of these outcomes occurring is $\\left(\\dfrac{1}{6}\\right)^3\\left(\\dfrac{5}{6}\\right)^7$ and they're all mutually exclusive cases, so the probability that one of them will occur (which is the probability that we're looking for) is $\\binom{10}{3}\\left(\\dfrac{1}{6}\\right)^3\\left(\\dfrac{5}{6}\\right)^7=\\dfrac{120\\cdot5^7\\cdot1^3}{6^{10}}\\approx \\boxed{.155}$.",
+    "type": "Counting & Probability"
+  },
+  {
+    "index": 3041,
+    "level": "Level 1",
+    "problem": "Find $(4^4 \\div 4^3) \\cdot 2^8$.",
+    "solution": "Performing the arithmetic in the parentheses first, we obtain $4^4 \\div 4^3 = 4$, so we have \\[(4^4 \\div 4^3) \\cdot 2^8 = 4\\cdot 2^8.\\]Since  $4 = 2^2$, we have  \\[4\\cdot 2^8 = 2^2 \\cdot 2^8 = 2^{10}= \\boxed{1024}.\\]",
+    "type": "Prealgebra"
+  },
+  {
+    "index": 6176,
+    "level": "Level 1",
+    "problem": "If $\\displaystyle\\frac{m}{n} = 15$, $\\displaystyle\\frac{p}{n} = 3$, and $\\displaystyle \\frac{p}{q} = \\frac{1}{10}$, then what is $\\displaystyle\\frac{m}{q}$?",
+    "solution": "If we multiply the first equation, the third equation, and the reciprocal of the second equation, we get \\[\\frac{m}{n}\\cdot\\frac{p}{q}\\cdot \\frac{n}{p} = 15\\cdot \\frac{1}{10}\\cdot\\frac{1}{3}\\Rightarrow \\frac{m}{q}= \\boxed{\\frac{1}{2}}.\\]",
+    "type": "Algebra"
+  },
+  {
+    "index": 3438,
+    "level": "Level 2",
+    "problem": "Twelve students in Mrs. Stephenson's class have brown eyes. Twenty students in the class have a lunch box. Of Mrs. Stephenson's 30 students, what is the least possible number of students who have brown eyes and a lunch box?",
+    "solution": "Since $20$ students have a lunch box, $10$ students do not have a lunch box.  So at most $10$ students with brown eyes do not have a lunch box, and at least $\\boxed{2}$ students with brown eyes must have a lunch box.",
+    "type": "Prealgebra"
+  },
+  {
+    "index": 2605,
+    "level": "Level 3",
+    "problem": "A roll of quarters contains $40$ quarters and a roll of dimes contains $50$ dimes. James has a jar that contains $83$ quarters and $159$ dimes.  Lindsay has a jar that contains $129$ quarters and $266$ dimes. James and Lindsay pool these quarters and dimes and make complete rolls with as many of the coins as possible. In dollars, how much are the leftover quarters and dimes worth?",
+    "solution": "We use residues of the numbers of each type of coin to determine the number of dimes and quarters leftover: $$ \\begin{array}{rcrcr} 83 + 129 &\\equiv& 3 + 9 &\\equiv& 12 \\pmod{40} \\\\ 159 + 266 &\\equiv& 9 + 16 &\\equiv& 25 \\pmod{50} \\end{array} $$ The total value of the leftover quarters and dimes is $$ 12(\\$0.25) + 25(\\$0.10) = \\$3.00 + \\$2.50 = \\boxed{\\$5.50}. $$",
+    "type": "Number Theory"
+  },
+]
