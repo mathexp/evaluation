@@ -1,0 +1,262 @@
+@index 2
+
+@input
+Marcia wants to buy some fruit.
+Apples cost $2, bananas cost $1, and oranges cost $3.
+If Marcia buys 12 apples, 4 bananas and 4 oranges, what is the average cost of each piece of fruit in dollars?
+
+@prediction
+Find the cost of each fruit by multiplying the price by the number of fruits bought: 12 * $2 = $<< 12 * 2 = 24 >> 24 apples
+4 * $1 = $<< 4 * 1 = 4 >> 4 bananas
+4 * $3 = $<< 4 * 3 = 12 >> 12 oranges
+The total cost of the fruit is $24 + $4 + $12 = $<< 24 + 4 + 12 = 40 >> 40
+We have to divide the total cost by the number of fruits to find the average cost: $40 / 12 = $<< 40 / 12 = 3.3333333333333335 >> 3.3333333333333335
+#### 3.3333333333333335
+
+@correction
+There is a mistake in dividing the total cost by the number of fruit, because 12 only counts the number of apples, not the total number of fruit
+The total number of fruit is 12 + 4 + 4 = << 12 + 4 + 4 = 20 >> 20
+Therefore, the corect answer is $40 / 20 fruits = $<< 40 / 20 = 2 >> 2 per fruit
+#### 2
+
+@target
+Find the price of each group of fruit
+12 apples * $2 per apple = $<< 12 * 2 = 24 >> 24
+4 bananas * $1 per banana = $<< 4 * 1 = 4 >> 4
+3 oranges * $4 per orange = $<< 3 * 4 = 12 >> 12
+$24 + $4 + $12 = $<< 24 + 4 + 12 = 40 >> 40 in total that was spent
+12 + 4 + 4 = << 12 + 4 + 4 = 20 >> 20 total fruits bought
+$40 / 20 fruits = $<< 40 / 20 = 2 >> 2 per fruit
+#### 2
+
+-----------------------------
+
+@index 8
+
+@input
+John bakes 12 coconut macaroons, each weighing 5 ounces.
+He then packs an equal number of the macaroons in 4 different brown bags, ready for delivery.
+When he briefly leaves the kitchen to pick the phone, his little brother Steve eats the entire contents of one of the brown bags.
+ What is the total weight, in ounces, of the remaining coconut macaroons?
+
+@prediction
+Each brown bag has 12 / 4 = << 12 / 4 = 3.0 >> 3.0 macaroons
+Before Steve's caper, the weight was 4 * 3.0 = << 4 * 3.0 = 12.0 >> 12.0 ounces
+Thus, the weight that remains is 12 - 12 * .75 = 12 - 9 = << 12 - 12 * .75 = 3.0 >> 3.0 ounces
+#### 3
+
+@correction
+There is a mistake in the total weight calculation, because the weight of each bag is not 3.0
+The total weight is found by multiplying the number of macaroons by the weight of each, which gives 12 * 5 = << 12 * 5 = 60 >> 60 ounces
+Steve ate 1 bag, leaving 3 of 4 bags, which means the total remaining weight is 60 * 0.75 = << 60 * 0.75 = 45 >> 45 ounces.
+#### 45
+
+@target
+Each brown bag has 12 / 4 = << 12 / 4 = 3 >> 3 macaroons
+After Steve eats a bag, there are 12 - 3 = << 12 - 3 = 9 >> 9 macaroons left
+The total weight is therefore 9 * 5 = << 9 * 5 = 45 >> 45 ounces.
+#### 45
+
+-----------------------------
+
+@index 9
+
+@input
+Nathan is buying decorations for his wedding reception.
+The reception hall will have 20 tables.
+Each table needs a linen tablecloth ($25 to rent), 4 place settings ($10 each to rent), and a centerpiece.
+Each centerpiece will have 10 roses ($5 each) and 15 lilies ($4 each).
+How much will the decorations cost?
+
+@prediction
+First find how much the roses will cost: $5 /rose * 10 roses = $<< 5 * 10 = 50 >> 50
+Then find how much the lilies will cost: $4 /rose * 15 roses = $<< 4 * 15 = 60 >> 60
+Then find how much the table settings will cost: 4 settings * $10 /setting = $<< 4 * 10 = 40 >> 40
+Then find how much the tablecloths will cost: 20 tables * $25 /table = $<< 20 * 25 = 500 >> 500
+Then add the cost of the flowers, table settings, and tablecloths to find the total cost: $50 + $60 + $40 + $500 = $<< 50 + 60 + 40 + 500 = 650 >> 650
+#### 650
+
+@correction
+The mistake is that the cost of roses, lilies, and table settings is not multiplied by the number of tables
+We should add the cost of both types of flowers, the place settings, and the tablecloth to find the total cost per table: $50 + $60 + $40 + $25 = $<< 50 + 60 + 40 + 25 = 175 >> 175
+Then multiply the cost per table by the number of tables to find the total cost: $175 /table * 20 tables = $<< 175 * 20 = 3500 >> 3500
+#### 3500
+
+@target
+First find how much the roses for one centerpiece cost: $5 /rose * 10 roses = $<< 5 * 10 = 50 >> 50
+Then find how much the lilies for one centerpiece cost: $4 /rose * 15 roses = $<< 4 * 15 = 60 >> 60
+Then find how much the table settings for one table cost: 4 settings * $10 /setting = $<< 4 * 10 = 40 >> 40
+Then add the cost of both types of flowers, the place settings, and the tablecloth to find the total cost per table: $50 + $60 + $40 + $25 = $<< 50 + 60 + 40 + 25 = 175 >> 175
+Then multiply the cost per table by the number of tables to find the total cost: $175 /table * 20 tables = $<< 175 * 20 = 3500 >> 3500
+#### 3500
+
+-----------------------------
+
+@index 13
+
+@input
+Mariel is a dog walker.
+ While walking her pack of dogs, she gets tangled up in the leashes of another dog walker and their 3 dogs.
+ There are 36 legs tangled up in leashes.
+ How many dogs is Mariel walking?
+
+@prediction
+There are 2 dog walkers and they each have 2 legs so that's 2 * 2 = << 2 * 2 = 4 >> 4 legs
+The other dog walker has 3 dogs and each dog has 2 legs so that's 3 * 2 = << 3 * 2 = 6 >> 6 legs
+The dog walkers have 4 legs and the 3 dogs have 6 legs for a total of 4 + 6 = << 4 + 6 = 10 >> 10 legs
+There are 36 legs total and the dog walkers and dogs take up 10 legs so that leaves 36 - 10 = << 36 - 10 = 26 >> 26 legs for the dogs
+Dogs have 4 legs and there are 26 legs for the dogs so that's 26 / 4 = << 26 / 4 = 6.5 >> 6.5 dogs
+#### 6
+
+@correction
+The mistake is that the other dog walker has 3 dogs and each dog has 4 logs, not 2
+Therefore, those dogs have 3 * 4 = << 3 * 4 = 12 >> 12 legs
+The dog walkers have 4 legs and the 3 dogs have 12 legs for a total of 4 + 12 = << 4 + 6 = 16 >> 16 legs
+There are 36 legs total and 16 belong to the dog walkers and 3 dogs so that leaves 36 - 16 = << 36 - 16 = 20 >> 20 legs
+Dogs have 4 legs and there are 20 legs so Mariel is walking 20 / 4 = 5 dogs
+#### 5
+
+@target
+There are 2 dog walkers and they each have 2 legs so that's 2 * 2 = << 2 * 2 = 4 >> 4 legs
+The other dog walker is walking 3 dogs that each have 4 legs so that's 3 * 4 = << 3 * 4 = 12 >> 12 legs
+The dog walkers have 4 legs and the other dogs have 12 legs for a total of 4 + 12 = << 4 + 12 = 16 >> 16 legs
+There are 36 legs total and 16 belong to the dog walkers and 3 dogs so that leaves 36 - 16 = << 36 - 16 = 20 >> 20 legs
+Dogs have 4 legs and there are 20 legs so Mariel is walking 20 / 4 = 5 dogs
+#### 5
+
+-----------------------------
+
+@index 20
+
+@input
+A group of 4 fruit baskets contains 9 apples, 15 oranges, and 14 bananas in the first three baskets and 2 less of each fruit in the fourth basket.
+How many fruits are there?
+
+@prediction
+For the first three baskets, the number of apples and oranges in one basket is 9 + 15 = << 9 + 15 = 24 >> 24
+In total, there are 24 * 3 = << 24 * 3 = 72 >> 72 fruits in the first three baskets.
+In the fourth basket, there are 14 - 2 = << 14 - 2 = 12 >> 12 apples, oranges, and bananas.
+In total, there are 72 + 12 = << 72 + 12 = 84 >> 84 fruits.
+#### 84
+
+@correction
+
+
+@target
+For the first three baskets, the number of apples and oranges in one basket is 9 + 15 = << 9 + 15 = 24 >> 24
+In total, together with bananas, the number of fruits in one basket is 24 + 14 = << 24 + 14 = 38 >> 38 for the first three baskets.
+Since there are three baskets each having 38 fruits, there are 3 * 38 = << 3 * 38 = 114 >> 114 fruits in the first three baskets.
+The number of apples in the fourth basket is 9 - 2 = << 9 - 2 = 7 >> 7
+There are also 15 - 2 = << 15 - 2 = 13 >> 13 oranges in the fourth basket
+The combined number of oranges and apples in the fourth basket is 13 + 7 = << 13 + 7 = 20 >> 20
+The fourth basket also contains 14 - 2 = << 14 - 2 = 12 >> 12 bananas.
+In total, the fourth basket has 20 + 12 = << 20 + 12 = 32 >> 32 fruits.
+The four baskets together have 32 + 114 = << 32 + 114 = 146 >> 146 fruits.
+#### 146
+
+-----------------------------
+
+@index 28
+
+@input
+Iris’ family is planning a surprise birthday party for her.
+The party will include her 3 uncles and 4 aunts who have a son and daughter each as well as her brother and mother.
+In total, how many people are coming to Iris’ birthday party?
+
+@prediction
+Each of her aunts and uncles have a family unit of 1 son + 1 daughter + 1 aunt/uncle = << 1 + 1 + 1 = 3 >> 3 people.
+Iris’ aunts and uncles have a total of 3 aunts/uncles * 3 people in a family unit = << 3 * 3 = 9 >> 9 family units.
+Iris’ aunts and uncles have a total of 9 family units * 4 people in Iris’ family = << 9 * 4 = 36 >> 36 people in Iris’ family.
+Including Iris’ brother and mother, there are a total of 36 people in Iris’ family + 2 people = << 36 + 2 = 38 >> 38 people coming to her party.
+#### 38
+
+@correction
+
+
+@target
+Each of her aunts and uncles have a family unit of 1 son + 1 daughter + 1 aunt/uncle = << 1 + 1 + 1 = 3 >> 3 people.
+Iris has a total of 3 uncles + 4 aunts = << 3 + 4 = 7 >> 7 aunts or uncles in these family units.
+So among her aunts, uncles, and cousins, there will be 7 family units * 3 people in each family unit = << 7 * 3 = 21 >> 21 people.
+Including her mother and brother, there will be a total of 21 people + 1 mother + 1 brother = << 21 + 1 + 1 = 23 >> 23 people coming to her party.
+#### 23
+
+-----------------------------
+
+@index 29
+
+@input
+Matt needs to buy new plates for his home.
+ He only wants to do dishes once a week.
+ Three days a week it is only him and his son eating and they use 1 plate each.
+ On the remainder of the days, his parents join them and everyone uses 2 plates that day.
+ How many plates does he need to buy?
+
+@prediction
+So for 3 of the days, it is only him and his son eating and they each use 1 plate.
+So they use a total of 1 * 2 = << 1 * 2 = 2 >> 2 plates.
+On 7 - 3 = 4 days, his parents join them and they use 2 plates each of those days.
+So they use a total of 2 * 4 = << 2 * 4 = 8 >> 8 plates.
+So he needs to buy enough plates for 8 + 2 = << 8 + 2 = 10 >> 10.
+#### 10
+
+@correction
+
+
+@target
+So for 3 of the days, there are 1 + 1 = 2 people eating
+So for those days they use 3 * 2 = << 3 * 2 = 6 >> 6 plates
+On 7 - 3 = 4 days the parents join them
+On those days there are 2 + 2 = << 2 + 2 = 4 >> 4 people eating
+They use 4 * 2 = << 4 * 2 = 8 >> 8 plates
+So they use 8 * 4 = << 8 * 4 = 32 >> 32 plates
+That means they use a total of 32 + 6 = << 32 + 6 = 38 >> 38 plates
+#### 38
+
+-----------------------------
+
+@index 31
+
+@input
+Rene has three times as many dolls as her sister, while her sister has two more dolls than their grandmother.
+If their grandmother has 50 dolls, how many dolls do they have altogether?
+
+@prediction
+If their grandmother has 50 dolls, their sister has 50 - 2 = << 50 - 2 = 48 >> 48 dolls.
+Together, Rene and her sister have 48 + 3 * 48 = 144 dolls.
+#### 144
+
+@correction
+
+
+@target
+If the grandmother has 50 dolls, Rene's sister, who has 2 more dolls than their grandmother, has 50 + 2 = << 50 + 2 = 52 >> 52 dolls.
+Together, Rene's sister and the grandmother have 52 + 50 = << 52 + 50 = 102 >> 102 dolls.
+Since Rene has three times as many dolls as her sister, she has 52 * 3 = << 52 * 3 = 156 >> 156 dolls.
+Altogether, they have 156 + 102 = << 156 + 102 = 258 >> 258 dolls.
+#### 258
+
+-----------------------------
+
+@index 32
+
+@input
+Johns goes to the gym 3 times a week.
+ He spends 1 hour each day lifting weight.
+Additionally, he also spends a third of his weightlifting time warming up and doing cardio each day.
+ How many hours does he spend at the gym a week?
+
+@prediction
+He lifts for 1 hour each day and does cardio for 1 / 3 of that time so he does that for 1 / 3 * 1 hour = 1 / 3 hour per day
+He lifts for 1 hour and does cardio for 1 / 3 hour so he is at the gym for a total of 1 + 1 / 3 = 5 / 3 hours per day
+He goes to the gym 3 days a week and spends 5 / 3 hours at the gym each day so he spends 3 * 5 / 3 = << 3 * 5 / 3 = 5.0 >> 5.0 hours at the gym
+#### 5
+
+@correction
+
+
+@target
+He spends 60 / 3 = << 60 / 3 = 20 >> 20 minutes warming up
+So he spends 60 + 20 = << 60 + 20 = 80 >> 80 minutes at the gym per day
+That means he spends 80 * 3 = << 80 * 3 = 240 >> 240 minutes at the gym
+So he spends 240 / 60 = << 240 / 60 = 4 >> 4 hours at the gym a week
+#### 4
