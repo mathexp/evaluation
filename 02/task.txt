@@ -234,29 +234,3 @@ Together, Rene's sister and the grandmother have 52 + 50 = << 52 + 50 = 102 >> 1
 Since Rene has three times as many dolls as her sister, she has 52 * 3 = << 52 * 3 = 156 >> 156 dolls.
 Altogether, they have 156 + 102 = << 156 + 102 = 258 >> 258 dolls.
 #### 258
-
------------------------------
-
-@index 32
-
-@input
-Johns goes to the gym 3 times a week.
- He spends 1 hour each day lifting weight.
-Additionally, he also spends a third of his weightlifting time warming up and doing cardio each day.
- How many hours does he spend at the gym a week?
-
-@prediction
-He lifts for 1 hour each day and does cardio for 1 / 3 of that time so he does that for 1 / 3 * 1 hour = 1 / 3 hour per day
-He lifts for 1 hour and does cardio for 1 / 3 hour so he is at the gym for a total of 1 + 1 / 3 = 5 / 3 hours per day
-He goes to the gym 3 days a week and spends 5 / 3 hours at the gym each day so he spends 3 * 5 / 3 = << 3 * 5 / 3 = 5.0 >> 5.0 hours at the gym
-#### 5
-
-@correction
-
-
-@target
-He spends 60 / 3 = << 60 / 3 = 20 >> 20 minutes warming up
-So he spends 60 + 20 = << 60 + 20 = 80 >> 80 minutes at the gym per day
-That means he spends 80 * 3 = << 80 * 3 = 240 >> 240 minutes at the gym
-So he spends 240 / 60 = << 240 / 60 = 4 >> 4 hours at the gym a week
-#### 4
