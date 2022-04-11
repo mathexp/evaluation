@@ -10,7 +10,7 @@ def probability_three_dice_show_one(number_of_dice, number_of_sides):
   from itertools import combinations
 
   probability_three_dice_show_one = len(list(combinations(range(number_of_dice), 3)))
-  probability_of_any_one_outcome = (1. / number_of_sides)**3 * (1 - (1. / number_of_sides))**7
+  probability_of_any_one_outcome = (1. / number_of_sides)**3 * (1 - (1. / number_of_sides))**(number_of_dice - 3)
   return round(probability_of_any_one_outcome * probability_three_dice_show_one, 3)
 
 def problem(number_of_dice, number_of_sides):
