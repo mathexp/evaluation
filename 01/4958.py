@@ -19,5 +19,9 @@ def problem(number_of_dice, number_of_sides):
 def test():
   assert problem(10, 6) == PROBLEM
   assert probability_three_dice_show_one(10, 6) == SOLUTION
+  # Additional examples
+  probability_three_dice_show_one(15, 4) == 0.225
+  probability_three_dice_show_one(4, 9) == 0.005
+  probability_three_dice_show_one(5, 5) == 0.051
 
 test()
