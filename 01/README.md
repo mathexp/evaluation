@@ -13,4 +13,4 @@ Specifications:
  - Each python file should match the format of the provided files as closely as possible.
  - You are encouraged to use libraries such as `math`, `sympy` and `itertools` and other useful common python libraries.
  - Try to make your python files as pedagogical as possible. Please include descriptive docstrings and comments.
- - Submit your files via email. *DO NOT open a pull request.*
+ - Submit your files via email. **DO NOT open a pull request.**
