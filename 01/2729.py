@@ -7,11 +7,9 @@ def sum_two_binary_numbers_to_base_ten(summand_1, summand_2):
   """
   return int(summand_1, 2) + int(summand_2, 2)
 
-
 def problem(summand_1, summand_2):
   return f"What is ${summand_1}_2+{summand_2}_2$? Write your answer in base $10$."
   
-
 def test():
   assert problem("11111111", "111111") == PROBLEM
   assert sum_two_binary_numbers_to_base_ten("11111111", "111111") == SOLUTION
