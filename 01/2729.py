@@ -14,11 +14,9 @@ def test():
   assert problem("11111111", "111111") == PROBLEM
   assert sum_two_binary_numbers_to_base_ten("11111111", "111111") == SOLUTION
   
-def test():
-  assert problem("11111111", "111111") == PROBLEM
-  assert sum_two_binary_numbers_to_base_ten("11111111", "111111") == SOLUTION
-  
   # Additional examples:
   assert sum_two_binary_numbers_to_base_ten("111", "11111") == 38
   assert sum_two_binary_numbers_to_base_ten("10011", "10011100") == 175
   assert sum_two_binary_numbers_to_base_ten("10011001", "1101") == 166
+
+test()
