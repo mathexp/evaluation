@@ -8,10 +8,13 @@ def probability_three_dice_show_one(number_of_dice: int, number_of_sides: int):
   thousandth.
   """
   from itertools import combinations
-
-  probability_three_dice_show_one = len(list(combinations(range(number_of_dice), 3)))
-  probability_of_any_one_outcome = (1. / number_of_sides)**3 * (1 - (1. / number_of_sides))**(number_of_dice - 3)
-  return round(probability_of_any_one_outcome * probability_three_dice_show_one, 3)
+  
+  # Compute n choose r for n = number of dice, r = 3 
+  p_three_dice_show_one = len(list(combinations(range(number_of_dice), 3)))
+  p_3_dice_match = (1. / number_of_sides)**3
+  p_other_dice_dont_match = (1 - (1. / number_of_sides))**(number_of_dice - 3)
+  p_any_one_outcome = p_3_dice_match * p_other_dice_dont_match
+  return round(p_any_one_outcome * p_three_dice_show_one, 3)
 
 def problem(number_of_dice: int, number_of_sides: int):
   return f"{number_of_dice} {number_of_sides}-sided dice are rolled. What is the probability that exactly three of the dice show a 1? Express your answer as a decimal rounded to the nearest thousandth."
