@@ -5,7 +5,14 @@ def sum_two_binary_numbers_to_base_ten(summand_1: str, summand_2: str):
   """
   Returns the sum of two binary numbers, summand1 and summand2, in base 10
   """
-  return int(summand_1, 2) + int(summand_2, 2)
+
+  # Convert summand_1 to an int in base 2
+  summand_1_base2 = int(summand_1, 2)
+  # Convert summand_2 to an int in base 3
+  summand_2_base2 = int(summand_2, 2)
+  
+  # Return their sum
+  return summand_1_base2 + summand_2_base2
     
 def problem(summand_1: str, summand_2: str):
   return f"What is ${summand_1}_2+{summand_2}_2$? Write your answer in base $10$."
