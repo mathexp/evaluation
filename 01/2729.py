@@ -1,6 +1,9 @@
 PROBLEM = "What is $11111111_2+111111_2$? Write your answer in base $10$."
 SOLUTION = 318
 
+def solve():
+  return int("11111111", 2) + int("111111", 2)
+  
 def sum_two_binary_numbers_to_base_ten(summand_1: str, summand_2: str):
   """
   Returns the sum of two binary numbers, summand1 and summand2, in base 10
@@ -19,6 +22,7 @@ def problem(summand_1: str, summand_2: str):
   
 def test():
   assert problem("11111111", "111111") == PROBLEM
+  assert solve() == SOLUTION
   assert sum_two_binary_numbers_to_base_ten("11111111", "111111") == SOLUTION
   
   # Additional examples:
