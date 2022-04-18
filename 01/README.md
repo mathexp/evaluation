@@ -12,7 +12,12 @@ The first 2 word problems have corresponding `.py` files as examples for you to 
 
 ## Your task
 
-Your task is to create python files that correspond to the other four problems in `evaluation.json`.
+Your task is to create python files that correspond to the other four problems in `evaluation.json`. Each file must have the following:
+ - `PROBLEM` and `SOLUTION` specified at the top of the file
+ - `solve` function that directly solves the problem
+ -  a generalized function with a semantic name that solves a broader version of the problem by accepting arguments
+ -  `problem` function, which generates a string that represents the problem
+ -  `test` function, which tests for the correctness of the other functions and must be called at the bottom of the file.
 
 ## Specifications
  - Each python file should match the format of the provided files as closely as possible.
